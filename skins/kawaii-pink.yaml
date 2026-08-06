@@ -1,0 +1,97 @@
+# Kawaii Pink — a soft, cute light-pink skin for all Hermes surfaces.
+# Themed for light backgrounds: plum text on blush-pink surfaces, candy-pink
+# accents. Missing keys inherit the default skin.
+
+name: kawaii-pink
+description: 软萌粉色主题，可爱又甜美
+
+colors:
+  # Base surface — blush white.
+  background: "#FFF3F7"
+
+  # Brand accent — candy pink. Legible against the blush background.
+  ui_accent: "#D63384"
+  banner_accent: "#D63384"
+
+  # Text hierarchy — deep plum on pink.
+  banner_title: "#4D3343"   # headings / primary
+  banner_text: "#5B3A4E"    # body foreground
+  ui_text: "#5B3A4E"
+  ui_label: "#C2185B"
+  banner_dim: "#8C5672"     # muted / secondary
+  banner_border: "#F3C9DC"  # soft rose borders
+  ui_border: "#F3C9DC"
+
+  # Semantic status — keep green/amber/red recognizable.
+  ui_ok: "#15803D"
+  ui_warn: "#B45309"
+  ui_error: "#C2334E"
+
+  # CLI / TUI chrome.
+  prompt: "#5B3A4E"
+  input_rule: "#D63384"
+  response_border: "#D63384"
+  status_bar_bg: "#FDEBF3"
+  status_bar_text: "#5B3A4E"
+  status_bar_strong: "#D63384"
+  status_bar_dim: "#A06B84"
+  status_bar_good: "#15803D"
+  status_bar_warn: "#B45309"
+  status_bar_bad: "#B45309"
+  status_bar_critical: "#C2334E"
+  session_label: "#C2185B"
+  session_border: "#E8B8CE"
+  completion_menu_bg: "#FFFFFF"
+  completion_menu_current_bg: "#FBD9E8"
+  completion_menu_meta_bg: "#FDF0F6"
+  completion_menu_meta_current_bg: "#F5C9DE"
+  selection_bg: "#F5C9DE"
+  shell_dollar: "#D63384"
+  voice_status_bg: "#FDEBF3"
+
+# Paired dark palette — black with pink accents. Used by the CLI/TUI when
+# the terminal is dark; the desktop app ships its own darkColors in the
+# kawaii-pink desktop plugin.
+dark_colors:
+  # Base surface — near-black with a hint of plum.
+  background: "#140E12"
+  ui_accent: "#FF6FAE"
+  banner_accent: "#FF6FAE"
+  banner_title: "#FFB1D2"   # headings / primary
+  banner_text: "#F2D5E2"    # body foreground
+  ui_text: "#F2D5E2"
+  ui_label: "#FF6FAE"
+  banner_dim: "#B08AA0"     # muted / secondary
+  banner_border: "#3A2230"
+  ui_border: "#3A2230"
+  ui_ok: "#4ADE80"
+  ui_warn: "#FBBF24"
+  ui_error: "#FB7185"
+  prompt: "#F2D5E2"
+  input_rule: "#FF6FAE"
+  response_border: "#FF6FAE"
+  status_bar_bg: "#0D090B"
+  status_bar_text: "#F2D5E2"
+  status_bar_strong: "#FF6FAE"
+  status_bar_dim: "#A6788F"
+  status_bar_good: "#4ADE80"
+  status_bar_warn: "#FBBF24"
+  status_bar_bad: "#FBBF24"
+  status_bar_critical: "#FB7185"
+  session_label: "#FF6FAE"
+  session_border: "#4A2A3A"
+  completion_menu_bg: "#1D1319"
+  completion_menu_current_bg: "#331E29"
+  completion_menu_meta_bg: "#241820"
+  completion_menu_meta_current_bg: "#3A2230"
+  selection_bg: "#4A2A3A"
+  shell_dollar: "#FF6FAE"
+  voice_status_bg: "#1D1319"
+
+# Optional cute flavor — safe to delete.
+branding:
+  agent_name: "Hermes ✿"
+  prompt_symbol: "❀"
+  help_header: "(◕ᴗ◕)? Commands"
+
+tool_prefix: "│"
