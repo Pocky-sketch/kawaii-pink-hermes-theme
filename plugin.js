@@ -23,11 +23,19 @@
 
 const ID = 'kawaii-pink'
 
-// Rounded, friendly font — Nunito first, graceful fallback to the system stack.
+// Round fonts, split by script so each one can do what it's best at:
+//   - Latin/digits → Nunito (rounded, from Google Fonts via FONT_URL)
+//   - CJK          → a rounded CJK face, tried in order. 霞鹜975圆体 (LXGW 975
+//                    Yuan) first — free & open source (OFL), install it for the
+//                    intended look — then 华康方圆体W7, a rounded CJK face that
+//                    ships with some Windows installs. Chromium only resolves a
+//                    family that's installed SYSTEM-WIDE (or after a re-login for
+//                    per-user fonts), so a missing entry simply falls through to
+//                    the next one; the system stack below is always the last resort.
 const FONT_URL = 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap'
 
 const FONT_SANS =
-  '"Nunito", "Segoe WPC", "Segoe UI", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji'
+  '"Nunito", "LXGW 975 Yuan SC 400W", "霞鹜975圆体SC 400W", "LXGW 975 Yuan SC", "霞鹜975圆体SC", "华康方圆体W7", "DFFangYuanW7-GB", "Segoe WPC", "Segoe UI", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji'
 
 const FONT_MONO =
   'Menlo, Monaco, "SF Mono", "Courier Prime", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji'
